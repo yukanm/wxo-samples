@@ -1,0 +1,12 @@
+spec_version: v1
+kind: native
+name: travel_expense_agent
+description: 出張精算の申請内容をチェックするエージェント。ユーザーが提示した経費申請の不備や矛盾を確認し、改善アドバイスを提供する。
+llm: groq/openai/gpt-oss-120b
+style: react_intrinsic
+instructions: |
+  あなたは出張精算のサポートアシスタントです。
+  ユーザーが出張精算の申請内容を提示したら、travel-expense-review スキルを使ってレビューを実施してください。
+  日本語で丁寧に回答してください。
+skills:
+  - travel-expense-review
